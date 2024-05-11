@@ -15,7 +15,7 @@ print("Start AudioToText")
 
 # Eigene Audioaufnahme laden:
 # Lese die Audiodatei und ändere die Abtastrate auf 16.000 Hz
-waveform, sampling_rate = librosa.load("/Users/franz/Library/Mobile Documents/com~apple~CloudDocs/Documents/Studium/Master/4. Master/MA/UnityProjects/Interactive_AI/Assets/Audio/audioInput.wav", sr=16000)
+waveform, sampling_rate = librosa.load("Assets/Audio/audioInput.wav", sr=16000)
 
 # Load the Whisper model in Hugging Face format:
 processor = WhisperProcessor.from_pretrained("openai/whisper-tiny")#openai/whisper-... tiny, base, small, medium, large
@@ -62,7 +62,8 @@ def query_ollama(prompt):
         "messages": [
             {"role": "system", "content": "You are an AI, who answers the users questions."},
             {"role": "user", "content": prompt}
-        ]
+        ],
+        "max_tokens": 30  # Begrenze die Anzahl der Tokens
     }
     
     response = requests.post(api_url, json=data)
@@ -70,8 +71,11 @@ def query_ollama(prompt):
         response_text = response.json()['choices'][0]['message']['content']
         # Entferne alles, was in Klammern steht, einschließlich der Klammern
         cleaned_text = re.sub(r'\(.*?\)', '', response_text)
+        # Begrenze den Text auf den letzten vollständigen Satz
+        last_full_stop = cleaned_text.rfind('.')
+        if last_full_stop != -1:
+            cleaned_text = cleaned_text[:last_full_stop + 1]
         return cleaned_text.strip()  # Entferne überflüssige Leerzeichen
-        return response_text
     else:
         return f"Fehler: {response.text}"
 
@@ -106,7 +110,7 @@ try:
 
     # Texteingaben definieren
     prompt = response
-    description = "A male speaker."
+    description = "A fast speaking male speaker."
 
     # Tokenisierung
     input_ids = tokenizer(description, return_tensors="pt").input_ids.to(device)
