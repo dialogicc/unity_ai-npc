@@ -2347,3 +2347,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2869.246009 seconds.
+  path: Assets/Images/2024-05-13_18-24-02_2974.png
+  artifactKey: Guid(953f5af64a42d4933bb91b62c2482c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/2024-05-13_18-24-02_2974.png using Guid(953f5af64a42d4933bb91b62c2482c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3be7043d46de84e1d0d2197825c1c3') in 0.602563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
