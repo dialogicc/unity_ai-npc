@@ -2355,3 +2355,19 @@ Received Import Request.
 Start importing Assets/Images/2024-05-13_18-24-02_2974.png using Guid(953f5af64a42d4933bb91b62c2482c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3be7043d46de84e1d0d2197825c1c3') in 0.602563 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 22776.898016 seconds.
+  path: Assets/Images/abstract.png
+  artifactKey: Guid(49cd5e0c8f9444060a03e8c2d4302f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/abstract.png using Guid(49cd5e0c8f9444060a03e8c2d4302f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42528d7cc4bc1a894413d3b1e3d70b2') in 0.217042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Images/robot.png
+  artifactKey: Guid(64c27f5adcac2460ab0ab45f7ff8cae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/robot.png using Guid(64c27f5adcac2460ab0ab45f7ff8cae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc66d21d932f6a93ae665ea63c3552f') in 0.010944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
