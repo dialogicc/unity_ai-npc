@@ -573,8 +573,8 @@ Transform:
   m_GameObject: {fileID: 306746216}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.15, y: 1.17, z: 9.320466}
-  m_LocalScale: {x: 1, y: 1.8, z: 1}
+  m_LocalPosition: {x: 8.15, y: 1.303, z: 9.320466}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 850434611}
@@ -610,7 +610,7 @@ MonoBehaviour:
   controller: {fileID: 306746217}
   speed: 12
   gravity: -19.62
-  jumpHeight: 3
+  jumpHeight: 1
   groundCheck: {fileID: 1200195411}
   groundDistance: 0.4
   groundMask:
