@@ -37,3 +37,5 @@ This guide will walk you through the steps needed to set up the project on a Win
    Open the script "Interaction" and modify the FileName to match the path to your Conda environment's Python executable. For example:
    ```csharp
    FileName = @"C:\Users\INF3_1\miniconda3\envs\master2\python.exe", // Path to the Conda environment's Python executable
+7. **Run Unity-Project:**
+   Open the Interactive_AI-folder in Unity and talk to the NPC by pressing 'e' to start and stop the audio-recording.
