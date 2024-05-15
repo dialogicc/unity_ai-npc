@@ -22,8 +22,8 @@ This guide will walk you through the steps needed to set up the project on a Win
    Ensure you are in the project directory and run:
    ```sh
    conda env create -f environment.yaml
-
-3.1  If you encounter issues with Parler TTS due to the Git path:
+   ```
+   If you encounter issues with Parler TTS due to the Git path:
       - Install Git for Windows from [here](https://gitforwindows.org/).
       - After installation, retry installing Parler TTS.  
       
