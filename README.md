@@ -12,7 +12,7 @@ This guide will walk you through the steps needed to set up the project on a Win
 ## Steps
 
 1. **Install Anaconda:**
-   Download and install Anaconda from [here]([https://www.anaconda.com/products/individual](https://docs.anaconda.com/free/miniconda/)).
+   Download and install Anaconda from [here]([https://www.anaconda.com/products/individual](https://docs.anaconda.com/free/miniconda/)) and run the Anaconda Prompt (miniconda3).
 
 2. **Configure Conda to use conda-forge:**
    Open Anaconda Prompt and run:
