@@ -34,6 +34,6 @@ This guide will walk you through the steps needed to set up the project on a Win
    Follow the instructions provided by Ollama to install it. Then, install the Gemma:2b package.
 
 6. **Adjust Python Path in Script:**
-   Open the script and modify the FileName to match the path to your Conda environment's Python executable:
+   Open the script "Interaction" and modify the FileName to match the path to your Conda environment's Python executable. For example:
    ```csharp
    FileName = @"C:\Users\INF3_1\miniconda3\envs\master2\python.exe", // Path to the Conda environment's Python executable
