@@ -21,7 +21,7 @@ This guide will walk you through the steps needed to set up the project on a Win
 3. **Create Conda Environment:**
    Ensure you are in the project directory and run:
    ```sh
-   conda env create -f environment.yaml
+   conda env create -f conda_environment_windows.yaml
    ```
    If you encounter issues with Parler TTS due to the Git path:
       - Install Git for Windows from [here](https://gitforwindows.org/).
