@@ -31,7 +31,7 @@ This guide will walk you through the steps needed to set up the project on a Win
    cd ~/Downloads
    ```
    
-   Ensure the .yaml file is located at "Downloads":
+   Ensure the .yaml file is located at "Downloads" and run:
    ```sh
    conda env create -f conda_environment_windows.yaml
    ```
