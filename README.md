@@ -22,11 +22,11 @@ This guide will walk you through the steps needed to set up the project on a Win
    Navigate to the right location
    Run the following command:
 
-   Windows:
+   *Windows:*
    ```
    cd %USERPROFILE%\Downloads
    ```
-      Unix:
+   *Unix:*
    ```
    cd ~/Downloads
    ```
