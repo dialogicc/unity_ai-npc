@@ -10,7 +10,7 @@ This guide will walk you through the steps needed to set up the project.
 
 ## Steps
 
-1. **Download the files**
+1. **Download the files:**
    Make sure, to download the environment-file as a .yaml and download the Interactive_AI folder.
 
 2. **Install Anaconda:**
