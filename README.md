@@ -43,11 +43,14 @@ This guide will walk you through the steps needed to set up the project.
    Download the latest version of Python from [here](https://www.python.org/downloads/) and install it.
 
 6. **Install Ollama and Gemma:2b:**
-   Follow the instructions provided by Ollama to install it. Then, install the Gemma:2b package.
+   Follow the instructions provided by Ollama from [here]([https://www.python.org/downloads/](https://ollama.com)) to install it. Then, install the Gemma:2b package by runiing the following command in the normal Windows or Unix console:
+   ```sh
+   ollama run gemma:2b
+   ```
 
-7. **Adjust Python Path in Script:**
+8. **Adjust Python Path in Script:**
    Open the script "Interaction" and modify the FileName to match the path to your Conda environment's Python executable. For example:
    ```csharp
    FileName = @"C:\Users\INF3_1\miniconda3\envs\master2\python.exe", // Path to the Conda environment's Python executable
-8. **Run Unity-Project:**
+9. **Run Unity-Project:**
    Open the Interactive_AI-folder in Unity and talk to the NPC by pressing 'e' to start and stop the audio-recording.
