@@ -1,25 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Diagnostics; // Für die Process-Klasse
-using System.IO; // Für die Verarbeitung der Ausgabe
-using System.Threading.Tasks; // Für asynchrone Methoden
-using System.Threading; // Für den UnitySynchronizationContext
+using System.Diagnostics; // For the Process class
+using System.IO; // For handling the output
+using System.Threading.Tasks; // For asynchronous methods
+using System.Threading; // For UnitySynchronizationContext
 #if UNITY_EDITOR
-using UnityEditor; // Für den Zugriff auf Editor-spezifische Funktionen wie AssetDatabase
+using UnityEditor; // For access to editor-specific functions like AssetDatabase
 #endif
 
 public class Interaction : MonoBehaviour
 {
     private bool playerNearby = false;
-    public AudioSource audioSource; // Füge eine öffentliche Variable für die AudioSource hinzu
-    private SynchronizationContext unitySyncContext; // Um auf den Hauptthread zuzugreifen
-    private AudioClip recordedClip; // Gespeicherter Clip für die Verarbeitung
-    private bool isRecording = false; // Flag, um den Aufnahmezustand zu verfolgen
+    public AudioSource audioSource; // Add a public variable for the AudioSource
+    private SynchronizationContext unitySyncContext; // To access the main thread
+    private AudioClip recordedClip; // Stored clip for processing
+    private bool isRecording = false; // Flag to track recording state
 
     void Awake()
     {
-        unitySyncContext = SynchronizationContext.Current; // Initialisiere den UnitySynchronizationContext
+        unitySyncContext = SynchronizationContext.Current; // Initialize the UnitySynchronizationContext
     }
 
     void OnTriggerEnter(Collider other)
@@ -55,7 +55,7 @@ public class Interaction : MonoBehaviour
 
     void StartConversation()
     {
-        recordedClip = Microphone.Start(null, false, 10, 44100); // Startet die Aufnahme für max. 10 Sekunden
+        recordedClip = Microphone.Start(null, false, 10, 44100); // Start recording for max. 10 seconds
         isRecording = true;
     }
 
@@ -77,7 +77,7 @@ public class Interaction : MonoBehaviour
         File.WriteAllBytes(filePath, wavFile);
 
         #if UNITY_EDITOR
-        AssetDatabase.Refresh(); // Refresh AssetDatabase to see the new file in the editor
+        AssetDatabase.Refresh(); // Refresh AssetDatabase to display the new file in the editor
         #endif
     }
 
@@ -117,7 +117,7 @@ public class Interaction : MonoBehaviour
     {
         string output = await Task.Run(() => ExecuteAction());
         #if UNITY_EDITOR
-        AssetDatabase.Refresh(); // Refresh the assets in the editor to properly load the audio
+        AssetDatabase.Refresh(); // Refresh assets in the editor to correctly load the audio
         #endif
         unitySyncContext.Post(_ => PlayAudio(), null);
     }
@@ -127,7 +127,7 @@ public class Interaction : MonoBehaviour
         string output = "";
         ProcessStartInfo startInfo = new ProcessStartInfo
         {
-            FileName = "/Users/franz/miniforge3/envs/master/bin/python", //Pfad zur Python der Conda-Umgebung
+            FileName = "/Users/franz/miniforge3/envs/master/bin/python", // Path to Python in the Conda environment
             Arguments = "\"Assets/Scripts/text.py\"",
             RedirectStandardOutput = true,
             RedirectStandardError = true,
