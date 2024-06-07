@@ -13,11 +13,15 @@ This guide will walk you through the steps needed to set up the project.
 1. **Install Anaconda:**
    Download and install Anaconda from [here]([https://www.anaconda.com/products/individual](https://docs.anaconda.com/free/miniconda/)), search and run the "Anaconda Prompt (miniconda3)" console.
 
-2. **Configure Conda to use conda-forge:**
+2. **Download the files**
+   Make sure, to download the environment-file as a .yaml and download the Interactive_AI folder.
+   
+   
+4. **Configure Conda to use conda-forge:**
    Run the following command in the Anaconda Prompt (miniconda3) console:
    ```sh
    conda config --add channels conda-forge
-3. **Create Conda Environment:**
+5. **Create Conda Environment:**
    
    Navigate to the right location
    Run the following command:
@@ -39,10 +43,10 @@ This guide will walk you through the steps needed to set up the project.
       - Install Git for Windows from [here](https://gitforwindows.org/).
       - After installation, retry installing Parler TTS.  
       
-5. **Download and Install Python:**
+6. **Download and Install Python:**
    Download the latest version of Python from [here](https://www.python.org/downloads/) and install it.
 
-6. **Install Ollama and Gemma:2b:**
+7. **Install Ollama and Gemma:2b:**
    Follow the instructions provided by Ollama from [here]([https://www.python.org/downloads/](https://ollama.com)) to install it. Then, install the Gemma:2b package by runiing the following command in the normal Windows or Unix console:
    ```sh
    ollama run gemma:2b
