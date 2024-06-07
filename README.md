@@ -1,6 +1,6 @@
 # Project Setup Guide
 
-This guide will walk you through the steps needed to set up the project on a Windows machine.
+This guide will walk you through the steps needed to set up the project.
 
 ## Prerequisites
 
