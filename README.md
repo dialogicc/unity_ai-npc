@@ -18,8 +18,10 @@ This guide will walk you through the steps needed to set up the project on a Win
    ```sh
    conda config --add channels conda-forge
 3. **Create Conda Environment:**
-   *Navigate to the right location*
+   
+   Navigate to the right location
    Run the following command:
+
    Windows:
    ```
    cd %USERPROFILE%\Downloads
