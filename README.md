@@ -11,7 +11,7 @@ This guide will walk you through the steps needed to set up the project.
 ## Steps
 
 1. **Install Anaconda:**
-   Download and install Anaconda from [here]([https://www.anaconda.com/products/individual](https://docs.anaconda.com/free/miniconda/)), search and run the "Anaconda Prompt (miniconda3)" console.
+   Download and install Anaconda from [here](https://www.anaconda.com/download/success), search and run the "Anaconda Prompt (miniconda3)" console.
 
 2. **Download the files**
    Make sure, to download the environment-file as a .yaml and download the Interactive_AI folder.
