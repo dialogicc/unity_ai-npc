@@ -58,4 +58,9 @@ This guide will walk you through the steps needed to set up the project.
    FileName = "/Users/USERNAME/miniforge3/envs/master/bin/python", // Path to the Conda environment's Python executable
    
 9. **Run Unity-Project:**
-   Open the Interactive_AI-folder in Unity and talk to the NPC by pressing 'e' to start and stop the audio-recording.
+   Open the Interactive_AI-folder in Unity.
+   
+   You may have to install the correct editor suggested by Unity for the project. If you are using Windows, press 'Switch target', when opening the porject.
+
+   Talk to the NPC by pressing 'e' to start and stop the audio-recording.
+   
