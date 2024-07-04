@@ -66,4 +66,6 @@ This guide will walk you through the steps needed to set up the project.
    You may have to install the correct editor suggested by Unity for the project. If you are using Windows, press 'Switch target', when opening the porject.
 
    Talk to the NPC by pressing 'e' to start and stop the audio-recording.
-   
+
+
+<img src="conceptnpc.png" alt="Concept" width="200"/>
